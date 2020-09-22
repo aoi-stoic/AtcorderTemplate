@@ -11,6 +11,7 @@ MAKEFLAGS :=+ --no-builtin-rules --no-print-directory
 # 引数（ターゲット）なし実行でtestをターゲットにする
 all: test
 
+build:$(BIN) 
 $(CLASS): $(SRC)
 	$(COMP) $(SRC)
 
